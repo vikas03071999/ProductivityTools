@@ -1,0 +1,59 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.homeContainer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../Images/BG3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.homeWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+}
+
+.homeHeading{
+    font-weight: 400;
+}
+
+.homeTools{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.homeTool{
+    border: 1px solid rgb(213, 68, 218);
+    width: 150px;
+    height: 100px;
+    flex: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 28px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+    transition: all .4s ease-in-out;
+    background-size: 300% 100%;
+}
+
+.homeTool:hover{
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+

@@ -1,0 +1,70 @@
+.emailContainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    background-image: url("../../Images/EmailImg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.emailWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.emailGenerateBtn{
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    align-self: center;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    border-color: white;
+}
+
+
+.emailInput{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    font-size: 21px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: white;
+}
+
+/* .emailInput::placeholder{
+    color: white;
+    font-size: 22px;
+} */
+
+.emailOutput{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+    padding: 20px;
+    font-size: 22px;
+    overflow-y: auto;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.emailClipboardIcon{
+    position: absolute;
+    top: 130px;
+    right: 240px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: white;
+}
