@@ -1,4 +1,3 @@
-import { API_KEY } from "./key";
 import Home from "./Pages/Home/Home";
 import Grammar from "./Pages/GrammarPerfect/Grammar";
 import Code from "./Pages/Code/Code";
@@ -9,7 +8,6 @@ import Chatgpt from "./Pages/ChatGPT/Chatgpt";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 
 function App() {
-  console.log(API_KEY)
   // font-family: 'Lato', sans-serif;
 
   return (

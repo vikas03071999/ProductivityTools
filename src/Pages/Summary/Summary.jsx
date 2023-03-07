@@ -3,7 +3,7 @@ import Input from '../../Components/Input/Input';
 import Output from '../../Components/Output/Output';
 import './Summary.css'
 import axios from 'axios';
-import { API_KEY } from "../../key"
+// import { API_KEY } from "../../key"
 import { FiClipboard } from "react-icons/fi";
 import { AiOutlineCheck } from "react-icons/ai";
 import copy from "copy-to-clipboard";
@@ -28,7 +28,7 @@ const Summary = () => {
       // Make api call to open AI model here and show the output in output div
       const client = axios.create({
         headers: {
-          Authorization: "Bearer " + API_KEY
+          Authorization: "Bearer " + process.env.REACT_APP_API_KEY
         }
       })
 
