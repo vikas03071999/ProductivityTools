@@ -12,7 +12,7 @@ import copy from "copy-to-clipboard";
 const Summary = () => {
   // State and variable area
   const [inputValue, setInputValue] = useState("");
-  const [outputValue, setOutputValue] = useState("Response will appear here . . .");
+  const [outputValue, setOutputValue] = useState("Summary will be displayed here . . .");
   const [loading, setLoading] = useState(false);
   const [showCopyIcon, setShowCopyIcon] = useState(true);
   const [showCheckIcon, setShowCheckIcon] = useState(false);
@@ -66,11 +66,11 @@ const Summary = () => {
       <FiClipboard className='clipboardIcon' onClick={copyToClipboard} style={{display: showCopyIcon ? "block" : "none"}} />
       <AiOutlineCheck className='clipboardIcon' style={{ display: showCheckIcon ? "block" : "none" }} />
       <div className="summaryWrapper">
-        <Input inputValue={inputValue} setInputValue={setInputValue}/>
+        <Input inputValue={inputValue} setInputValue={setInputValue} param={"Summary"}/>
         <button className='summaryBtn' onClick={generateSummary}>
           {loading ? "loading..." : "Summarize"}
         </button>
-        <Output outputValue={outputValue}/>
+        <Output outputValue={outputValue} param={"Summary"}/>
       </div>
     </div>
   )
