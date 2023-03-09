@@ -64,7 +64,7 @@ const Email = () => {
       <FiClipboard className='emailClipboardIcon' onClick={copyToClipboard} style={{display: showCopyIcon ? "block" : "none"}} />
       <AiOutlineCheck className='emailClipboardIcon' style={{ display: showCheckIcon ? "block" : "none" }} />
       <div className="emailWrapper">
-        <input type="text" className="emailInput" placeholder='Email purpose here . . .' onChange={(e)=>setInputValue(e.target.value)}/>
+        <input type="text" autoFocus spellCheck={false} className="emailInput" placeholder='Email purpose here . . .' onChange={(e)=>setInputValue(e.target.value)}/>
         <button className='emailGenerateBtn' onClick={generteEmail}>
           {loading ? "loading..." : "Generate"}
         </button>
