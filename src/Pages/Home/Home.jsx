@@ -6,7 +6,7 @@ const Home = () => {
     <div className='homeContainer'>
       <div className="homeWrapper">
         <h1 className="homeHeading">
-            Stay productive and impeccable at work
+            Stay productive at work
         </h1>
         <div className="homeTools">
           <a className='homeTool' href="/Code" style={{textDecoration:"none",color:"white"}}>Code</a>
