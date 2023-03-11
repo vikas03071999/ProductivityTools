@@ -1,6 +1,6 @@
 .outputContainer{
     height: 400px;
-    width: 500px;
+    /* width: 500px; */
     padding: 20px;
     border: 1px solid white;
     border-radius: 10px;
@@ -16,4 +16,45 @@
     font-size: 22px;
     font-family: 'Lato', sans-serif;
     color: gray;
+}
+
+@media (max-width:1068px){
+    .ouputDiv{
+       font-size: 18px;
+    }   
+}
+
+@media (min-width:650px) and (max-width:768px){
+    .ouputDiv{
+        font-size: 17px;
+    }
+    
+    .outputContainer{
+        height: 350px;
+    }
+}
+
+@media (min-width:500px) and (max-width:650px){
+    .ouputDiv{
+        font-size: 17px;
+    }
+    .outputArea{
+        width: 400px !important;
+    }
+    .outputContainer{
+        height: 200px;
+        /* width: 400px; */
+    }
+}
+
+@media (min-width:200px) and (max-width:500px){
+    .ouputDiv{
+        font-size: 15px;
+    }
+    .outputArea{
+        width: 350px !important;
+    }
+    .outputContainer{
+        height: 200px;
+    }
 }

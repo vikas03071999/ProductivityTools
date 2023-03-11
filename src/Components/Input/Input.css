@@ -6,6 +6,7 @@
     border-radius: 10px;
     background-color: black;
     opacity: 0.7;
+    margin-top: 27px;
 }
 
 .inputTextArea{
@@ -19,4 +20,39 @@
     resize: none;
     background: transparent;
     color: white;
+}
+
+@media (min-width:768px) and (max-width:1068px){
+ .inputTextArea{
+    font-size: 18px;
+ }   
+}
+
+@media (min-width:600px) and (max-width:768px){
+    .inputTextArea{
+        font-size: 17px;
+    }
+    
+    .inputContainer{
+        height: 350px;
+    }
+}
+@media (min-width:500px) and (max-width:650px){
+    .inputTextArea{
+        font-size: 17px;
+    }
+    .inputContainer{
+        height: 200px;
+        width: 400px;
+    }
+}
+
+@media (min-width:200px) and (max-width:500px){
+    .inputTextArea{
+        font-size: 15px;
+    }
+    .inputContainer{
+        height: 200px;
+        width: 350px;
+    }
 }
