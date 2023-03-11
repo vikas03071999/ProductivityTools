@@ -24,12 +24,76 @@
     color: white;
 }
 
-.clipboardIcon{
-    position: absolute;
-    top: 55px;
-    right: 70px;
+.outputArea{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+}
+
+/* .inputArea{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} */
+
+.grammarClipboardIcon{
+    display: flex;
+    align-self: end;
     font-size: 22px;
     cursor: pointer;
     transition: all 0.5s ease;
     color: white;
+}
+
+@media (min-width:600px) and (max-width:768px){
+    .grammarWrapper{
+        gap:20px;
+    }
+    .correctGrammarBtn{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+@media (min-width:500px) and (max-width:650px){
+    .grammarWrapper{
+        gap:20px;
+        flex-direction: column;
+    }
+    .grammarContainer{
+        padding: 10px 50px;
+    }
+    .correctGrammarBtn{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+@media (min-width:200px) and (max-width:376px){
+    .grammarWrapper{
+        gap:10px;
+        flex-direction: column;
+    }
+    .grammarContainer{
+        padding: 10px 50px;
+    }
+    .correctGrammarBtn{
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+
+@media (min-width:376px) and (max-width:499px){
+    .grammarWrapper{
+        gap:20px;
+        flex-direction: column;
+    }
+    .grammarContainer{
+        padding: 120px 50px;
+    }
+    .correctGrammarBtn{
+        font-size: 14px;
+        padding: 6px 8px;
+    }
 }

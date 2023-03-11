@@ -61,14 +61,17 @@ const Grammar = () => {
 
   return (
     <div className='grammarContainer'>
-      <FiClipboard className='clipboardIcon' onClick={copyToClipboard} style={{display: showCopyIcon ? "block" : "none"}} />
-      <AiOutlineCheck className='clipboardIcon' style={{ display: showCheckIcon ? "block" : "none" }} />
       <div className="grammarWrapper">
-        <Input inputValue={inputValue} setInputValue={setInputValue} param={"Grammar"}/>
+        <Input inputValue={inputValue} setInputValue={setInputValue} param={"Grammar"} />
+
         <button className='correctGrammarBtn' onClick={handleCorrection} style={{ pointerEvents: loading ? "none" : "all" }}>
           {loading ? "loading" : "Correct"}
         </button>
-        <Output outputValue={outputValue} param={"Grammar"}/>
+        <div className='outputArea'>
+          <FiClipboard className='grammarClipboardIcon' onClick={copyToClipboard} style={{ display: showCopyIcon ? "block" : "none" }} />
+          <AiOutlineCheck className='grammarClipboardIcon' style={{ display: showCheckIcon ? "block" : "none" }} />
+          <Output outputValue={outputValue} param={"Grammar"} />
+        </div>
       </div>
     </div>
   )
