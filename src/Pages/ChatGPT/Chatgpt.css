@@ -85,3 +85,42 @@
     cursor: pointer;
     color: black;
 }
+
+@media (min-width:600px) and (max-width:768px){
+    .chatgptInput{
+        width:1000px;
+        font-size: 16px;
+        padding:13px 6.5px;
+    }
+    .chatgptSendIcon{
+        font-size: 40px;
+    }
+}
+
+@media (min-width:500px) and (max-width:600px){
+    .chatgptInput{
+        width:900px;
+        font-size: 14px;
+        padding:10px 5px;
+    }
+    .chatgptSendIcon{
+        font-size: 40px;
+    }
+}
+
+@media (min-width:200px) and (max-width:499px){
+    .chatgptInput{
+        width:900px;
+        font-size: 12px;
+        padding:10px 5px;
+    }
+    .chatgptSendIcon{
+        font-size: 60px;
+    }
+    .messageText{
+        font-size: 12px;
+    }
+    .chatgptContainer{
+        padding:20px 5px;
+    }
+}

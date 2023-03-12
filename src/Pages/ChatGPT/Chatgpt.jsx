@@ -90,7 +90,7 @@ const Chatgpt = () => {
           }
         </div>
         <div className="chatgptInputSection">
-          <input type="text" autoFocus placeholder="Type here and kindly wait for the reply. . ." className="chatgptInput" value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyDown={(e) => handleEnterPress(e)} />
+          <input type="text" spellCheck={false} autoFocus placeholder="Type here and kindly wait for the reply. . ." className="chatgptInput" value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyDown={(e) => handleEnterPress(e)} />
           <AiOutlineSend className='chatgptSendIcon' onClick={handleQuery} />
         </div>
       </div>
