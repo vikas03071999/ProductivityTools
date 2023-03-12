@@ -3,7 +3,6 @@ import Input from '../../Components/Input/Input';
 import Output from '../../Components/Output/Output';
 import './Summary.css'
 import axios from 'axios';
-// import { API_KEY } from "../../key"
 import { FiClipboard } from "react-icons/fi";
 import { AiOutlineCheck } from "react-icons/ai";
 import copy from "copy-to-clipboard";
@@ -63,14 +62,16 @@ const Summary = () => {
 
   return (
     <div className='summaryContainer'>
-      <FiClipboard className='clipboardIcon' onClick={copyToClipboard} style={{display: showCopyIcon ? "block" : "none"}} />
-      <AiOutlineCheck className='clipboardIcon' style={{ display: showCheckIcon ? "block" : "none" }} />
       <div className="summaryWrapper">
         <Input inputValue={inputValue} setInputValue={setInputValue} param={"Summary"}/>
         <button className='summaryBtn' onClick={generateSummary}>
           {loading ? "loading..." : "Summarize"}
         </button>
-        <Output outputValue={outputValue} param={"Summary"}/>
+        <div className="outputArea">
+          <FiClipboard className='summaryClipboardIcon' onClick={copyToClipboard} style={{display: showCopyIcon ? "block" : "none"}} />
+          <AiOutlineCheck className='summaryClipboardIcon' style={{ display: showCheckIcon ? "block" : "none" }} />
+          <Output outputValue={outputValue} param={"Summary"}/>
+        </div>
       </div>
     </div>
   )

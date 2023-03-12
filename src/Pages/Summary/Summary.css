@@ -23,11 +23,70 @@
     color: white;
 }
 
-.clipboardIcon{
-    position: absolute;
-    top: 55px;
-    right: 70px;
+.outputArea{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+}
+
+.summaryClipboardIcon{
+    display: flex;
+    align-self: end;
     font-size: 22px;
     cursor: pointer;
     transition: all 0.5s ease;
+    color: white;
+}
+
+@media (min-width:600px) and (max-width:768px){
+    .summaryWrapper{
+        gap:20px;
+    }
+    .summaryBtn{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+@media (min-width:500px) and (max-width:650px){
+    .summaryWrapper{
+        gap:15px;
+        flex-direction: column;
+    }
+    .summaryContainer{
+        padding: 10px 50px;
+    }
+    .summaryBtn{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+@media (min-width:200px) and (max-width:376px){
+    .summaryWrapper{
+        gap:10px;
+        flex-direction: column;
+    }
+    .summaryContainer{
+        padding: 10px 50px;
+    }
+    .summaryBtn{
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+
+@media (min-width:376px) and (max-width:499px){
+    .summaryWrapper{
+        gap:20px;
+        flex-direction: column;
+    }
+    .summaryContainer{
+        padding: 120px 50px;
+    }
+    .summaryBtn{
+        font-size: 14px;
+        padding: 6px 8px;
+    }
 }

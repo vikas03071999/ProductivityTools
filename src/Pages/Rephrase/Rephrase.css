@@ -24,6 +24,13 @@
     border-color: white;
 }
 
+.outputArea{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 500px;
+}
+
 .clipboardIcon{
     position: absolute;
     top: 55px;
@@ -31,4 +38,56 @@
     font-size: 22px;
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+@media (min-width:600px) and (max-width:768px){
+    .rephraseWrapper{
+        gap:20px;
+    }
+    .rrephraseBtn{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+@media (min-width:500px) and (max-width:650px){
+    .rephraseWrapper{
+        gap:15px;
+        flex-direction: column;
+    }
+    .rephraseContainer{
+        padding: 10px 50px;
+    }
+    .rephraseBtn{
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+}
+
+@media (min-width:200px) and (max-width:376px){
+    .rephraseWrapper{
+        gap:10px;
+        flex-direction: column;
+    }
+    .rephraseContainer{
+        padding: 10px 50px;
+    }
+    .rephraseBtn{
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}
+
+@media (min-width:376px) and (max-width:499px){
+    .rephraseWrapper{
+        gap:20px;
+        flex-direction: column;
+    }
+    .rephraseContainer{
+        padding: 120px 50px;
+    }
+    .rephraseBtn{
+        font-size: 14px;
+        padding: 6px 8px;
+    }
 }

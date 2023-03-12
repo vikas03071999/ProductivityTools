@@ -65,14 +65,16 @@ const Rephrase = () => {
   
   return (
     <div className='rephraseContainer'>
-      <FiClipboard className='clipboardIcon' onClick={copyToClipboard} style={{display: showCopyIcon ? "block" : "none"}} />
-      <AiOutlineCheck className='clipboardIcon' style={{ display: showCheckIcon ? "block" : "none" }} />
       <div className="rephraseWrapper">
         <Input inputValue={inputValue} setInputValue={setInputValue} param={"Rephrase"}/>
         <button className='rephraseBtn' onClick={handleRephrase}>
           { loading ? "loading" : "Rephrase"}
         </button>
-        <Output outputValue={outputValue} param={"Rephrase"}/>
+        <div className='outputArea'>
+          <FiClipboard className='grammarClipboardIcon' onClick={copyToClipboard} style={{ display: showCopyIcon ? "block" : "none" }} />
+          <AiOutlineCheck className='grammarClipboardIcon' style={{ display: showCheckIcon ? "block" : "none" }} />
+          <Output outputValue={outputValue} param={"Rephrase"}/>
+        </div>
       </div>
     </div>
   )
