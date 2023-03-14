@@ -39,15 +39,18 @@ const Chatgpt = () => {
     })
 
     const params = {
-      prompt: inputValue,
-      model: "text-davinci-003",
-      max_tokens: 500,
-      temperature: 0,
+      // prompt: inputValue,
+      // model: "text-davinci-003",
+      // max_tokens: 500,
+      // temperature: 0,
+      "model": "gpt-3.5-turbo",
+      "messages": [{"role": "user", "content":inputValue}]
     }
     setInputValue("")
-    var response = await client.post(`https://api.openai.com/v1/completions`, params);
-    console.log(response.data.choices[0].text);
-    var refinedResponse = response.data.choices[0].text.trim().split("\n")
+    var response = await client.post(`https://api.openai.com/v1/chat/completions`, params);
+    console.log(response.data.choices[0].message.content);
+    console.log(response.data.choices[0].message.content);
+    var refinedResponse = response.data.choices[0].message.content.trim().split("\n")
     console.log(refinedResponse);
     const resObj = {
       "sender": "bot",
