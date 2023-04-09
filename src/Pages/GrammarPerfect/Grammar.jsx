@@ -24,6 +24,7 @@ const Grammar = () => {
     setLoading(true)
     try {
       // Make api call to open AI model here and show the output in output div
+      // Updated API Key
       const client = axios.create({
         headers: {
           Authorization: "Bearer " + process.env.REACT_APP_API_KEY
